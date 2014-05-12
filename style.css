@@ -1,0 +1,489 @@
+/*********
+Colors
+*********/
+/*********
+Mixins
+*********/
+/********
+Keyframes
+**********/
+@-webkit-keyframes header {
+  0% {
+    background-color: rgba(8, 41, 94, 0.2);
+  }
+
+  20% {
+    background-color: rgba(8, 41, 94, 0.4);
+  }
+
+  40% {
+    background-color: rgba(8, 41, 94, 0.5);
+  }
+
+  60% {
+    background-color: rgba(8, 41, 94, 0.6);
+  }
+
+  80% {
+    background-color: rgba(8, 41, 94, 0.8);
+  }
+
+  100% {
+    background-color: rgba(8, 41, 94, 0.9);
+  }
+}
+/*********
+Page Style
+*********/
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background-color: #f7fdfa;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  color: #08295e;
+  padding-bottom: 10px;
+}
+
+div.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  position: relative;
+}
+
+div.header {
+  background: url(img/background.jpg) no-repeat fixed 50% 180%;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+div.header h1 {
+  font-family: 'Cinzel', serif;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px 20px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: header 1s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+  color: #f7fdfa;
+}
+div.header h1 svg {
+  fill: #f7fdfa;
+  width: 60px;
+  vertical-align: bottom;
+  margin: 0 10px -23px 0;
+}
+div.header nav.small-menu {
+  display: none;
+}
+div.header nav.small-menu ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(8, 41, 94, 0.8);
+}
+div.header nav.small-menu ul li {
+  display: inline-block;
+  width: 16%;
+  margin: 2%;
+  text-align: center;
+}
+div.header nav.small-menu ul li a {
+  text-decoration: none;
+  padding: 15px;
+  color: #f7fdfa;
+}
+div.header nav.small-menu ul li a:hover {
+  background-color: #08295e;
+  font-weight: bold;
+}
+
+div.small-9 {
+  background: #f7fdfa;
+  float: left;
+  width: 61%;
+  margin: 0 2%;
+  color: #08295e;
+}
+div.small-9 img {
+  width: 500px;
+}
+
+div.rooms {
+  margin: 0;
+  padding: 40px 0;
+}
+div.rooms ul {
+  width: 100%;
+}
+div.rooms ul li {
+  float: left;
+  list-style: none;
+  width: 29%;
+  margin: 2%;
+}
+div.rooms ul li img {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  margin: 0 2px;
+}
+
+ul.amenities {
+  padding: 40px 0;
+  width: 100%;
+}
+ul.amenities li {
+  list-style: none;
+  height: 50px;
+  display: inline-block;
+}
+ul.amenities svg {
+  transition: fill 0.2s ease;
+  fill: #53ba83;
+  width: 25px;
+  vertical-align: middle;
+  margin-top: -5px;
+  padding: 2px;
+}
+ul.amenities svg:hover {
+  fill: #08295e;
+}
+
+div.about {
+  padding: 40px 0;
+}
+div.about img {
+  width: 300px;
+  padding: 5px;
+}
+div.about ul.thumbnails {
+  padding: 0;
+}
+div.about ul.thumbnails li {
+  list-style: none;
+  float: left;
+  width: 33%;
+}
+div.about ul.thumbnails li img {
+  max-width: 200px;
+}
+
+div.awards {
+  clear: both;
+  padding: 40px 0;
+}
+div.awards ul li {
+  list-style: none;
+  width: 180px;
+  display: inline-block;
+  padding: 5px;
+  vertical-align: top;
+}
+div.awards ul li svg {
+  transition: fill 0.2s ease;
+  fill: #095169;
+  margin-top: -10px;
+  width: 50px;
+  vertical-align: middle;
+}
+div.awards ul li svg:hover {
+  fill: #9fd86b;
+}
+div.awards ul li span {
+  font-size: 20px;
+  color: #095169;
+}
+div.awards ul li p {
+  padding: 5px;
+}
+
+div.hosts {
+  padding: 40px 0;
+}
+div.hosts img {
+  float: right;
+  padding: 0 10px;
+  width: 150px;
+}
+
+div.small-3 {
+  background: #08295e;
+  position: absolute;
+  right: 0;
+  top: 500px;
+  bottom: 0px;
+  width: 33.3%;
+  margin: 0;
+}
+div.small-3 p, div.small-3 label {
+  color: #f7fdfa;
+  font-size: 16px;
+  text-align: center;
+}
+
+ul.navigation {
+  padding-bottom: 0;
+}
+ul.navigation svg {
+  width: 25px;
+  height: 100px;
+  vertical-align: middle;
+  margin-top: -7px;
+  fill: #f7fdfa;
+}
+ul.navigation a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f7fdfa;
+}
+ul.navigation li.menu {
+  list-style: none;
+  text-align: center;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+ul.navigation li.menu ul {
+  padding: 5px 0;
+  display: none;
+  margin-bottom: 7%;
+}
+ul.navigation li.menu ul li {
+  display: inline;
+  list-style: none;
+  padding: 12px 10px;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: #059b9a;
+}
+ul.navigation li.menu ul li:hover {
+  opacity: 0.7;
+}
+
+form {
+  padding: 15px;
+  text-align: center;
+}
+form label {
+  display: inline;
+  padding: 10px 0;
+  vertical-align: bottom;
+}
+form label.message {
+  display: block;
+}
+form input {
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #08295e;
+  border: none;
+  border-bottom: 2px solid #9fd86b;
+  color: #f7fdfa;
+  text-align: center;
+}
+form.booking {
+  text-align: left;
+  padding-top: 0;
+}
+form.booking input {
+  padding: 5px;
+  margin: 0% 5%;
+}
+form.booking input:focus {
+  outline-color: #9fd86b;
+}
+form.booking input[type=submit] {
+  color: #f7fdfa;
+  display: block;
+  background-color: #9fd86b;
+  border: none;
+  border-radius: 5px;
+  margin: 5% 0 0 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+form.booking input[type=submit]:hover {
+  opacity: 0.8;
+}
+form.message input {
+  width: 250px;
+}
+form.message input:focus {
+  outline: none;
+}
+form.message textarea {
+  background-color: #f7fdfa;
+  border: 1px solid #9fd86b;
+  border-radius: 5px;
+  width: 80%;
+  color: #08295e;
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
+  font-weight: normal;
+}
+form.message textarea:focus {
+  outline-color: #9fd86b;
+  height: 200px;
+}
+form.message input[type=submit] {
+  color: #f7fdfa;
+  background-color: #9fd86b;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5% auto;
+}
+form.message input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+fieldset {
+  border: 1px solid #9fd86b;
+  color: #095169;
+  font-size: 16px;
+  padding: 20px 15px;
+  margin: 0% 4%;
+}
+fieldset legend {
+  color: #9fd86b;
+}
+
+div.info {
+  padding: 10px 0;
+  margin: 8% 4%;
+}
+
+div.map {
+  text-align: center;
+  margin: 8% auto;
+  max-width: 80%;
+}
+div.map label {
+  display: block;
+  padding: 10px;
+}
+div.map iframe {
+  padding: 10px 0 20px 0;
+}
+
+form.newsletter {
+  clear: both;
+  text-align: center;
+  position: absolute;
+  bottom: 0.5%;
+  right: 9%;
+}
+form.newsletter p, form.newsletter label {
+  color: #f7fdfa;
+}
+form.newsletter input {
+  display: block;
+  outline: none;
+  width: 200px;
+  padding: 10px;
+  color: #f7fdfa;
+  margin: 0 auto;
+}
+form.newsletter input[type=submit] {
+  color: #f7fdfa;
+  background-color: #9fd86b;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5% auto;
+}
+form.newsletter input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+h3 {
+  color: #9fd86b;
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+ul.bxslider li {
+  list-style: none;
+  padding: 25px;
+}
+
+.bx-pager-item {
+  display: none;
+}
+
+footer {
+  clear: both;
+  background-color: #08295e;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+}
+footer a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
+  font-weight: normal;
+}
+footer ul.social-media {
+  padding: 0;
+  position: absolute;
+  right: 100px;
+  bottom: 20px;
+}
+footer ul.social-media li {
+  display: inline-block;
+  padding: 10px;
+}
+footer ul.social-media li svg {
+  width: 50px;
+  fill: #059b9a;
+  max-height: 100px;
+  margin-bottom: -10px;
+}
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+
+
+/*@media all and (max-width: 800px){
+    nav.small-menu{
+      display: block;
+    }
+}*/

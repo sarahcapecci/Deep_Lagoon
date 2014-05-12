@@ -1,0 +1,176 @@
+body {
+			font-family:'Quattrocento Sans', sans-serif;
+		}
+
+		h1 {
+			font-family: 'Cinzel', serif;
+			font-weight: normal;
+		}
+		
+		h2, h3, h4, h5, h6 {
+			font-weight: normal;
+		}
+
+		p {
+			line-height: 25px;
+		}
+
+		.section-title {
+			border-bottom: solid 1px #dedede;
+			padding-bottom: 0.5em;
+			margin-top: 2em;
+		}
+
+		.label {
+			font-size: 14px;	
+			margin: 0.5em 0 2em;
+		}
+
+		.container {
+			width: 90%;
+			max-width: 1000px;
+			margin: 0 auto;
+			overflow: hidden;
+
+		}
+
+
+		.colours {
+			padding-left: 0;
+			list-style: none;
+		}
+
+		.colours li {
+			float: left;
+			width: 20%;
+			margin: 0 5%;
+			text-align: center;
+		}
+
+		.colours .swatch {
+			display: inline-block;
+			width: 70%;
+			height: 0;
+			padding-top: 70%;
+			border-radius: 50%
+		}
+
+
+
+		span.white {
+			border: 1px solid #0C0636;
+		}
+
+		.typography {
+			max-width: 500px;
+		}
+		
+		div.container form {
+			background-color: #08295E;
+			width: 50%;
+			color: #53BA83;
+			text-align: center;
+			padding: 10px;
+		}
+		fieldset {
+			border-radius: 5px;
+			border: 1px solid #9FD86B;
+		}
+		.container input {
+			background-color: #08295E;
+			width: 40%;
+			padding: 8px;
+		}
+		label {
+			color: #F7FDFA;
+			padding: 5px 5px 5px 0;
+			display: block;
+			margin-top: 5px;
+		}
+
+
+		label.message, textarea, input[type=submit] {
+			display: block;
+			padding: 5px;
+			margin-top: 5px;
+		}
+
+		textarea {
+			border: 1px solid #9FD86B;
+			background-color: #F7FDFA;
+			margin: 0 auto 10px auto;
+		}
+
+		textarea:focus{
+			height: 200px;
+			width: 250px;
+		}
+
+
+		input[type=text], input[type=email] {
+			border:none;
+			color: #F7FDFA;
+			border-bottom: 1px solid #9FD86B;
+			font-family:'Quattrocento Sans', sans-serif;
+			font-size: 14px;
+		}
+
+		input[type=submit] {
+			color: #F7FDFA;
+			background-color: #095169;
+			margin-top: 10px;
+			border: none;
+			border-radius: 10px;
+			padding: 10px;
+			font-family:'Quattrocento Sans', sans-serif;
+			font-size: 14px;
+			margin: 0 auto;
+		}
+
+		input[type=submit]:hover {
+			background-color: #9FD86B;
+			cursor: pointer;
+		}
+
+		input:focus, select:focus, textarea:focus {
+			outline: none;
+			border-color: #9FD86B;
+		}
+
+		.container a {
+			text-decoration: none;
+			padding: 10px;
+			text-align: center;
+			color: #F7FDFA;
+			border-radius: 5px;
+			margin: 5px;
+		}
+
+		.button-big {
+			background-color: #059B9A;
+		}
+
+		.button-small {
+			background-color: #095169;
+		}
+
+		.button-inverse {
+			background-color: #9FD86B;
+		}
+
+		div.panel {
+			background-color: #0C0636;
+			color: #F7FDFA;
+			border-radius: 10px;
+			padding: 10px;
+			margin-top: 20px;
+		}
+
+		div.panel p {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		.avatar {
+			width: 500px;
+		}
